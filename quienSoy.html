@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="Biografía, habilidades técnicas y certificaciones de inglés CEC-EPN de Jonathan Steven Guamán Maza.">
+  <title>Quién soy · Portafolio de Jonathan Guamán</title>
+  <link rel="icon" type="image/jpeg" href="img/Imagen%20foto.jfif">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jg-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="quien-soy">
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__avatar" src="img/Imagen%20foto.jfif" alt="Fotografía de Jonathan Guamán" width="40" height="40"
+             onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/168588278?v=4';">
+        <span class="brand__name">Jonathan Guamán</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__box" aria-hidden="true"><span></span></span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienSoy.html" aria-current="page">Quién soy</a></li>
+          <li><a href="experienciaLab.html">Experiencia</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contactame.html">Contáctame</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Activar modo oscuro">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__text" id="themeToggleLabel">Modo oscuro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head container">
+      <p class="eyebrow">Perfil profesional</p>
+      <h1>Quién soy</h1>
+      <p class="section__lead">
+        Estudiante de Ingeniería de Software en la Escuela Politécnica Nacional, con interés
+        en la lógica de programación y el desarrollo frontend.
+      </p>
+    </section>
+
+    <!-- ---------- BIO ---------- -->
+    <section class="section container" aria-labelledby="bio-title">
+      <div class="split">
+        <div class="panel">
+          <h2 id="bio-title">Sobre mí</h2>
+          <p>
+            Mi nombre es <strong>Jonathan Steven Guamán Maza</strong>. Cursó el
+            <strong>7.º semestre</strong> de la carrera de <strong>Ingeniería de Software</strong>
+            en la <strong>Escuela Politécnica Nacional (EPN)</strong>.
+          </p>
+          <p>
+            Mi enfoque profesional es la <strong>lógica de programación</strong> y el
+            <strong>desarrollo frontend</strong>. Me motiva desarrollar software intuitivo
+            y útil, que mejore la experiencia de las personas que lo usan.
+          </p>
+          <p>
+            Fuera del aula participo como miembro del <strong>equipo de logística de Ludolab</strong>,
+            el laboratorio de la Escuela Politécnica Nacional.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="portafolio.html">Ver mis proyectos</a>
+            <a class="btn btn--ghost" href="contactame.html">Contactarme</a>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="hero__photo-frame">
+            <img class="hero__photo hero__photo--sm" src="img/Imagen%20foto.jfif"
+                 alt="Retrato de Jonathan Steven Guamán Maza" width="240" height="240"
+                 onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/168588278?v=4';">
+          </div>
+          <dl class="data-list">
+            <div><dt>Institución</dt><dd>Escuela Politécnica Nacional (EPN)</dd></div>
+            <div><dt>Carrera</dt><dd>Ingeniería de Software</dd></div>
+            <div><dt>Semestre</dt><dd>7.º semestre</dd></div>
+            <div><dt>Enfoque</dt><dd>Lógica de programación · Frontend</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- HABILIDADES ---------- -->
+    <section class="section container" aria-labelledby="skills-title">
+      <header class="section__head">
+        <p class="eyebrow">Miller's Law · grupos de 3</p>
+        <h2 id="skills-title">Habilidades técnicas y herramientas</h2>
+        <p class="section__lead">Organizadas en tres grupos para facilitar su lectura.</p>
+      </header>
+
+      <div class="grid grid--cards">
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">⌨️</span>
+          <h3>Lenguajes</h3>
+          <ul class="chip-list">
+            <li class="chip">Java</li>
+            <li class="chip">C++</li>
+            <li class="chip">C</li>
+            <li class="chip">Python</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">🗄️</span>
+          <h3>Bases de datos</h3>
+          <ul class="chip-list">
+            <li class="chip">SQLite</li>
+            <li class="chip">MySQL</li>
+            <li class="chip">Oracle</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card__icon" aria-hidden="true">🛠️</span>
+          <h3>Herramientas de trabajo</h3>
+          <ul class="chip-list">
+            <li class="chip">Visual Studio Code</li>
+            <li class="chip">IntelliJ IDEA</li>
+            <li class="chip">Visual Studio 2022</li>
+            <li class="chip">Microsoft Office</li>
+            <li class="chip">JavaFX</li>
+            <li class="chip">CSS</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ---------- CERTIFICADOS ---------- -->
+    <section class="section container" aria-labelledby="cert-title">
+      <header class="section__head">
+        <p class="eyebrow">CEC · Escuela Politécnica Nacional</p>
+        <h2 id="cert-title">Certificaciones de inglés</h2>
+        <p class="section__lead">
+          Ocho certificaciones obtenidas en el Centro de Educación Continua (CEC-EPN).
+          Las barras muestran el nivel alcanzado sobre un máximo de <strong>12 niveles</strong>.
+        </p>
+      </header>
+
+      <div class="panel panel--highlight">
+        <div class="panel__row">
+          <span class="panel__label">Nivel actual alcanzado</span>
+          <span class="panel__value"><strong>Level Twelve</strong> · Superior Speaking</span>
+        </div>
+        <div class="progress progress--lg" role="progressbar" aria-valuemin="0" aria-valuemax="12"
+             aria-valuenow="12" aria-label="Nivel de inglés alcanzado: 12 de 12">
+          <span class="progress__bar" data-progress="100"></span>
+        </div>
+      </div>
+
+      <ul class="cert-list">
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Superior Speaking · Level Twelve</h3>
+            <span class="badge">Ciclo 2 2026</span>
+          </div>
+          <p class="cert__meta">9 de julio de 2026 · Nivel 12 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="12" aria-label="Nivel 12 de 12">
+            <span class="progress__bar" data-progress="100"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2026/LINGUISTICA/2/diploma_231794_63093-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Superior Speaking, Level Twelve (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Academic Four · Level Eleven</h3>
+            <span class="badge">Ciclo 5 2025</span>
+          </div>
+          <p class="cert__meta">27 de enero de 2026 · Nivel 11 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="11" aria-label="Nivel 11 de 12">
+            <span class="progress__bar" data-progress="92"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2025/LINGUISTICA/5/diploma_231794_61607-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Academic Four, Level Eleven (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Academic Three · Level Ten</h3>
+            <span class="badge">Ciclo 2 2025</span>
+          </div>
+          <p class="cert__meta">19 de junio de 2025 · Nivel 10 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="10" aria-label="Nivel 10 de 12">
+            <span class="progress__bar" data-progress="83"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2025/LINGUISTICA/2/diploma_231794_59327-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Academic Three, Level Ten (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Academic Two · Level Nine</h3>
+            <span class="badge">Ciclo 4 2024</span>
+          </div>
+          <p class="cert__meta">28 de enero de 2025 · Nivel 9 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="9" aria-label="Nivel 9 de 12">
+            <span class="progress__bar" data-progress="75"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2024/LINGUISTICA/4/diploma_231794_57469-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Academic Two, Level Nine (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Academic One · Level Eight</h3>
+            <span class="badge">Ciclo 2 2024</span>
+          </div>
+          <p class="cert__meta">18 de junio de 2024 · Nivel 8 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="8" aria-label="Nivel 8 de 12">
+            <span class="progress__bar" data-progress="67"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2024/LINGUISTICA/2/diploma_231794_56042-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Academic One, Level Eight (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Advanced Two · Level Seven</h3>
+            <span class="badge">Ciclo 1 2024</span>
+          </div>
+          <p class="cert__meta">10 de abril de 2024 · Nivel 7 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="7" aria-label="Nivel 7 de 12">
+            <span class="progress__bar" data-progress="58"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2024/LINGUISTICA/1/diploma_231794_55102-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Advanced Two, Level Seven (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Intermediate Two · Level Five</h3>
+            <span class="badge">Ciclo 1 2023</span>
+          </div>
+          <p class="cert__meta">14 de abril de 2023 · Nivel 5 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="5" aria-label="Nivel 5 de 12">
+            <span class="progress__bar" data-progress="42"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2023/LINGUISTICA/1/diploma_231794_51633-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Intermediate Two, Level Five (nueva pestaña)</span>
+          </a>
+        </li>
+
+        <li class="card cert">
+          <div class="cert__head">
+            <h3 class="cert__title">Intermediate One · Level Four</h3>
+            <span class="badge">Ciclo 4 2022</span>
+          </div>
+          <p class="cert__meta">10 de enero de 2023 · Nivel 4 de 12</p>
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="12" aria-valuenow="4" aria-label="Nivel 4 de 12">
+            <span class="progress__bar" data-progress="33"></span>
+          </div>
+          <a class="link-arrow" href="https://aps.cec-epn.edu.ec/diplomas/2022/LINGUISTICA/4/diploma_231794_50636-signed.pdf" target="_blank" rel="noopener noreferrer">
+            Ver certificado (PDF)<span class="sr-only"> — Intermediate One, Level Four (nueva pestaña)</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>Jonathan Steven Guamán Maza</strong> · Ingeniería de Software · Escuela Politécnica Nacional</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/JonathanGuaman2004" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-guam%C3%A1n-b3a372326" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="hud" aria-label="Progreso de misiones">
+    <div class="hud__panel" id="hudPanel" hidden>
+      <div class="panel__row">
+        <span class="panel__label">Progreso del perfil</span>
+        <span class="panel__value"><strong data-xp-text>0</strong> / 100 XP</span>
+      </div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+           aria-valuenow="0" aria-label="Experiencia acumulada" data-xp-progress>
+        <span class="progress__bar" data-xp-bar></span>
+      </div>
+      <ul class="mission-list" data-mission-list aria-label="Lista de misiones de exploración"></ul>
+      <button class="btn btn--ghost btn--sm" type="button" id="resetProgress">Reiniciar progreso</button>
+    </div>
+    <button class="hud__toggle" id="hudToggle" type="button" aria-expanded="false" aria-controls="hudPanel">
+      <span class="hud__icon" aria-hidden="true">★</span>
+      <span class="hud__xp"><strong data-xp-text>0</strong> XP</span>
+      <span class="hud__chevron" aria-hidden="true"></span>
+      <span class="sr-only">Mostrar u ocultar el panel de misiones</span>
+    </button>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

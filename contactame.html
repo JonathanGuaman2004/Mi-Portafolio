@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="Formulario de contacto y enlaces a GitHub y LinkedIn de Jonathan Steven Guamán Maza.">
+  <title>Contáctame · Portafolio de Jonathan Guamán</title>
+  <link rel="icon" type="image/jpeg" href="img/Imagen%20foto.jfif">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jg-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="contacto">
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__avatar" src="img/Imagen%20foto.jfif" alt="Fotografía de Jonathan Guamán" width="40" height="40"
+             onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/168588278?v=4';">
+        <span class="brand__name">Jonathan Guamán</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__box" aria-hidden="true"><span></span></span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienSoy.html">Quién soy</a></li>
+          <li><a href="experienciaLab.html">Experiencia</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contactame.html" aria-current="page">Contáctame</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Activar modo oscuro">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__text" id="themeToggleLabel">Modo oscuro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head container">
+      <p class="eyebrow">Hablemos</p>
+      <h1>Contáctame</h1>
+      <p class="section__lead">
+        Escríbeme mediante el formulario o encuéntrame en GitHub y LinkedIn.
+      </p>
+    </section>
+
+    <section class="section container" aria-labelledby="form-title">
+      <div class="split">
+        <div class="panel">
+          <h2 id="form-title">Formulario de contacto</h2>
+          <p class="hint">Los campos marcados con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> son obligatorios.</p>
+
+          <form id="contactForm" class="form" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name"
+                     aria-required="true" aria-describedby="error-nombre" placeholder="Tu nombre completo">
+              <p class="field__error" id="error-nombre" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input type="email" id="correo" name="correo" autocomplete="email"
+                     aria-required="true" aria-describedby="error-correo" placeholder="tucorreo@ejemplo.com">
+              <p class="field__error" id="error-correo" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea id="mensaje" name="mensaje" rows="5"
+                        aria-required="true" aria-describedby="error-mensaje"
+                        placeholder="Cuéntame en qué puedo ayudarte"></textarea>
+              <p class="field__error" id="error-mensaje" hidden></p>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">Enviar mensaje</button>
+            <p class="form__ok" id="formOk" role="status" hidden></p>
+          </form>
+
+          <p class="hint">
+            Este formulario es demostrativo y no envía datos a un servidor.
+            Para contacto directo, usa GitHub o LinkedIn.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a class="card card--link" href="https://github.com/JonathanGuaman2004"
+             target="_blank" rel="noopener noreferrer">
+            <span class="card__icon" aria-hidden="true">🐙</span>
+            <h3>GitHub</h3>
+            <p>github.com/JonathanGuaman2004</p>
+            <span class="card__cta">Abrir perfil <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="card card--link" href="https://www.linkedin.com/in/jonathan-guam%C3%A1n-b3a372326"
+             target="_blank" rel="noopener noreferrer">
+            <span class="card__icon" aria-hidden="true">💼</span>
+            <h3>LinkedIn</h3>
+            <p>Perfil profesional de Jonathan Guamán</p>
+            <span class="card__cta">Abrir perfil <span aria-hidden="true">→</span></span>
+          </a>
+
+          <div class="card">
+            <span class="card__icon" aria-hidden="true">🎓</span>
+            <h3>Institución</h3>
+            <p>Escuela Politécnica Nacional (EPN) · Ingeniería de Software · 7.º semestre</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>Jonathan Steven Guamán Maza</strong> · Ingeniería de Software · Escuela Politécnica Nacional</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/JonathanGuaman2004" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-guam%C3%A1n-b3a372326" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="hud" aria-label="Progreso de misiones">
+    <div class="hud__panel" id="hudPanel" hidden>
+      <div class="panel__row">
+        <span class="panel__label">Progreso del perfil</span>
+        <span class="panel__value"><strong data-xp-text>0</strong> / 100 XP</span>
+      </div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+           aria-valuenow="0" aria-label="Experiencia acumulada" data-xp-progress>
+        <span class="progress__bar" data-xp-bar></span>
+      </div>
+      <ul class="mission-list" data-mission-list aria-label="Lista de misiones de exploración"></ul>
+      <button class="btn btn--ghost btn--sm" type="button" id="resetProgress">Reiniciar progreso</button>
+    </div>
+    <button class="hud__toggle" id="hudToggle" type="button" aria-expanded="false" aria-controls="hudPanel">
+      <span class="hud__icon" aria-hidden="true">★</span>
+      <span class="hud__xp"><strong data-xp-text>0</strong> XP</span>
+      <span class="hud__chevron" aria-hidden="true"></span>
+      <span class="sr-only">Mostrar u ocultar el panel de misiones</span>
+    </button>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

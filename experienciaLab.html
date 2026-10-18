@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="Formación académica en la EPN y experiencia de Jonathan Guamán en el equipo de logística de Ludolab.">
+  <title>Experiencia y formación · Portafolio de Jonathan Guamán</title>
+  <link rel="icon" type="image/jpeg" href="img/Imagen%20foto.jfif">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('jg-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="experiencia">
+
+  <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <img class="brand__avatar" src="img/Imagen%20foto.jfif" alt="Fotografía de Jonathan Guamán" width="40" height="40"
+             onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/168588278?v=4';">
+        <span class="brand__name">Jonathan Guamán</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__box" aria-hidden="true"><span></span></span>
+        <span class="sr-only">Abrir menú de navegación</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="quienSoy.html">Quién soy</a></li>
+          <li><a href="experienciaLab.html" aria-current="page">Experiencia</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="contactame.html">Contáctame</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Activar modo oscuro">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__text" id="themeToggleLabel">Modo oscuro</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head container">
+      <p class="eyebrow">Trayectoria</p>
+      <h1>Experiencia y formación</h1>
+      <p class="section__lead">
+        Formación académica en la Escuela Politécnica Nacional y participación activa
+        en el laboratorio Ludolab.
+      </p>
+    </section>
+
+    <section class="section container" aria-labelledby="trayectoria-title">
+      <h2 id="trayectoria-title" class="sr-only">Línea de trayectoria</h2>
+
+      <ol class="timeline">
+        <li class="timeline__item">
+          <article class="card">
+            <div class="cert__head">
+              <h3>Formación académica</h3>
+              <span class="badge">En curso</span>
+            </div>
+            <p class="cert__meta">Ingeniería de Software · Escuela Politécnica Nacional (EPN)</p>
+            <p>
+              Actualmente cursando el <strong>7.º semestre</strong> de la carrera de
+              Ingeniería de Software en la EPN, con enfoque en
+              <strong>lógica de programación</strong> y <strong>desarrollo frontend</strong>.
+            </p>
+            <ul class="chip-list" aria-label="Áreas de formación">
+              <li class="chip">Lógica de programación</li>
+              <li class="chip">Desarrollo frontend</li>
+              <li class="chip">Bases de datos</li>
+            </ul>
+          </article>
+        </li>
+
+        <li class="timeline__item">
+          <article class="card">
+            <div class="cert__head">
+              <h3>Miembro del equipo de logística</h3>
+              <span class="badge">Ludolab</span>
+            </div>
+            <p class="cert__meta">Ludolab · Laboratorio de la Escuela Politécnica Nacional</p>
+            <p>
+              Participación como miembro del <strong>equipo de logística</strong> de Ludolab,
+              con responsabilidades de <strong>organización y coordinación de actividades</strong>
+              del equipo.
+            </p>
+            <ul class="chip-list" aria-label="Responsabilidades">
+              <li class="chip">Organización</li>
+              <li class="chip">Coordinación de actividades</li>
+              <li class="chip">Trabajo en equipo</li>
+            </ul>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section container" aria-labelledby="siguiente-title">
+      <div class="panel panel--highlight">
+        <h2 id="siguiente-title">¿Quieres ver lo que he construido?</h2>
+        <p>Explora los cuatro proyectos destacados con sus repositorios en GitHub.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="portafolio.html">Ir al portafolio</a>
+          <a class="btn btn--ghost" href="contactame.html">Contactarme</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>Jonathan Steven Guamán Maza</strong> · Ingeniería de Software · Escuela Politécnica Nacional</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/JonathanGuaman2004" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-guam%C3%A1n-b3a372326" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (se abre en una nueva pestaña)</span></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="hud" aria-label="Progreso de misiones">
+    <div class="hud__panel" id="hudPanel" hidden>
+      <div class="panel__row">
+        <span class="panel__label">Progreso del perfil</span>
+        <span class="panel__value"><strong data-xp-text>0</strong> / 100 XP</span>
+      </div>
+      <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+           aria-valuenow="0" aria-label="Experiencia acumulada" data-xp-progress>
+        <span class="progress__bar" data-xp-bar></span>
+      </div>
+      <ul class="mission-list" data-mission-list aria-label="Lista de misiones de exploración"></ul>
+      <button class="btn btn--ghost btn--sm" type="button" id="resetProgress">Reiniciar progreso</button>
+    </div>
+    <button class="hud__toggle" id="hudToggle" type="button" aria-expanded="false" aria-controls="hudPanel">
+      <span class="hud__icon" aria-hidden="true">★</span>
+      <span class="hud__xp"><strong data-xp-text>0</strong> XP</span>
+      <span class="hud__chevron" aria-hidden="true"></span>
+      <span class="sr-only">Mostrar u ocultar el panel de misiones</span>
+    </button>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
